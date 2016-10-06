@@ -21,5 +21,5 @@ computer_name = `scutil --get ComputerName`.strip
 hardware_data = parse_system_profiler(datatype: 'SPHardwareDataType')
 storage_data = parse_system_profiler(datatype: 'SPStorageDataType')
 
-# puts storage_data['_properties']
+puts storage_data['_properties']
 puts computer_name + ' || ' + hardware_data['_items'][0]['machine_model']
