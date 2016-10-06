@@ -14,8 +14,6 @@ def parse_system_profiler(datatype: 'SPStorageDataType',
   result
 end
 
-
-
 computer_name = `scutil --get ComputerName`.strip
 
 hardware_data = parse_system_profiler(datatype: 'SPHardwareDataType')
